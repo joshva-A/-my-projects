@@ -29,21 +29,39 @@
   background-color: #4C4B4B;;
   color: white;
 }
-.button {
-  background-color:#ff0000;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
 }
 
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+button:focus {
+	outline: none;
+}
 </style>
 </head>
 
@@ -199,13 +217,13 @@ if(isset($_POST['submit']))
             <br><br>
                 <div class="text-center" >
 
-            <button class = "button" name="submit" type="submit">Transfer</button>
+            <button class = "noselect" name="submit" type="submit">Transfer</button>
             </div>
 
 
         </form>
         <div>
-        <a href="index.php"><button class = button>Back</button></a>
+        <a href="transfermoney.php"><button class = noselect>Back</button></a>
         </div>
     </div>
 
