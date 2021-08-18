@@ -29,21 +29,47 @@
   background-color: #4C4B4B;
   color: white;
 }
-.button {
-  background-color:#ff0000;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
 }
 
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+button:focus {
+	outline: none;
+}
+body {
+  margin:25px;
+  background:-webkit-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* Chrome 10+, Saf5.1+ */
+  background:-moz-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* FF3.6+ */
+  background:-ms-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* IE10 */
+  background:-o-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* Opera 11.10+ */
+  background:linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* W3C */ 
+}
 </style>
 </head>
 
@@ -95,7 +121,7 @@
         </tbody>
     </table>
         <div>
-        <a href="index.php"><button class = button>Back</button></a>
+        <a href="index.php"><button class = noselect>Back</button></a>
         </div>
     </div>
 </div>
