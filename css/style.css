@@ -1,0 +1,110 @@
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+button:focus {
+	outline: none;
+}
+
+div.polaroid {
+  width: 75%;
+  height: 79%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+div.polaroid1 {
+  width: 90%;
+  height: 78%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 101%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff0000;;
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 106%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff0000;;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+img.animated-gif{
+  width: 120px;
+  height: auto;
+  
+}
+body {
+  margin:25px;
+  background:-webkit-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* Chrome 10+, Saf5.1+ */
+  background:-moz-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* FF3.6+ */
+  background:-ms-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* IE10 */
+  background:-o-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* Opera 11.10+ */
+  background:linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* W3C */ 
+}
+
